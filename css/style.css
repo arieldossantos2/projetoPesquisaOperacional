@@ -1,0 +1,40 @@
+:root{
+  --azul: #004d98;
+}
+
+@media (min-width: 990px){
+  .header{
+    height: 10vh;
+    width: 100%;
+  }
+  
+  .tabCont{
+    height: 87vh;
+  }
+  
+
+  
+  .footer{
+    height: 3vh;
+    width: 100%;
+    background-color: var(--azul);
+  }
+}
+.table-responsive{
+  height: 75vh;
+  padding-bottom: 30px;
+}
+
+.table-responsive thead{
+  background-color: var(--azul);
+  color: #fff;
+}
+
+.modal-header{
+  background-color: var(--azul);
+  color: #fff;
+}
+
+.close{
+  color: #fff!important;
+}

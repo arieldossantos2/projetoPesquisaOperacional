@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Projeto Simulação</title>
+
+
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" />
+    
+  </head>
+
+  <body>
+  
+    <div class="container-fluid header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 py-3">
+            <div class="d-flex align-items-center justify-content-between">
+              <h4 class="mb-0">Escolha a quantidade de vezes para simular</h4>
+              <div class="d-flex align-items-center justify-content-center">
+                <a href="javascript:;" data-multiplicador=1 class="btn btn-add btn-primary unitario mx-3">1x</a>
+                <a href="javascript:;" data-multiplicador=10 class="btn btn-add btn-primary mx-3">10x</a>
+                <a href="javascript:;" data-multiplicador=100 class="btn btn-add btn-primary mx-3">100x</a>
+                <a href="javascript:;" data-multiplicador=1000 class="btn btn-add btn-primary ml-3">1000x</a>
+                <a href="javascript:;" data-multiplicador=50000 class="btn btn-add btn-danger mx-3">50000x</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container tabCont">
+      <div class="row">
+        <div class="col-12 pt-2">
+          <div class="table-responsive mt-3">
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th scope="col">Round</th>
+                  <th scope="col">Jogada</th>
+                  <th scope="col">Sorteado</th>
+                  <th scope="col">Cara</th>
+                  <th scope="col">Coroa</th>
+                  <th scope="col">Saldo do Round</th>
+                  <th scope="col">Saldo Total</th>
+                </tr>
+              </thead>
+              <tbody>
+  <!--
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+  -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-6">
+          <a href="javascript:;" class="btn btn-danger btn-reset w-100">Resetar tudo</a>
+        </div>
+        <div class="col-6">
+          <a href="javascript:;" class="btn btn-warning btn-calc-media w-100">Calcular média</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal" class="modal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title font-weight-bold">Resultados da simulação</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer d-flex align-items-center justify-content-center">
+      <img src="img/univap.png" class="img-fluid " style="max-width: 50px;" />
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
